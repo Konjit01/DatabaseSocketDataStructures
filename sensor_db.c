@@ -15,21 +15,21 @@
 #include "config.h"
 
 #define FILE_OPEN_ERROR(fp) 								\
-		do {												\
-			if ( (fp) == NULL )								\
-			{												\
-				perror("File open failed");					\
-				exit( EXIT_FAILURE );						\
-			}												\
+		do {									\
+			if ( (fp) == NULL )					        \
+			{								\
+				perror("File open failed");			        \
+				exit( EXIT_FAILURE );					\
+			}							        \
 		} while(0)
 
 #define FILE_CLOSE_ERROR(err) 								\
-		do {												\
-			if ( (err) == -1 )								\
-			{												\
+		do {								        \
+			if ( (err) == -1 )						\
+			{								\
 				perror("File close failed");				\
-				exit( EXIT_FAILURE );						\
-			}												\
+				exit( EXIT_FAILURE );					\
+			}							        \
 		} while(0)
 
 
